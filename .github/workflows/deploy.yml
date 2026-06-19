@@ -3,7 +3,5 @@ on: push
 
 jobs:
   Deploy_Job:
-        runs-on: ubuntu-latest
-        steps:
-           - name: Call The Reuse WorkFlow
-             uses: souravgit2021/shared-lib-test/.github/workflows/hello-reusable.yml@main
+    # Right: 'uses' is placed directly under the job name
+    uses: souravgit2021/shared-lib-test/.github/workflows/hello-reusable.yml@main
