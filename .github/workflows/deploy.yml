@@ -6,4 +6,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
            - name: Call The Reuse WorkFlow
-             uses: ./workflows/hellow-reusable.yml@main
+             uses: souravgit2021/shared-lib-test/.github/workflows/hello-reusable.yml@main
