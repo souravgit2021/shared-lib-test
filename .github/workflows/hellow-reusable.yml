@@ -1,0 +1,9 @@
+name: Reusable Hellow WorkFlow
+on: workflow_call
+
+jobs:
+  Greet_Job:  
+    runs-on: ubuntu-latest
+    steps:
+     - name: Say Hellow
+       run: echo "Hellow World"

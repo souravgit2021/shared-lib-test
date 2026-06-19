@@ -1,0 +1,9 @@
+name: Main Application PipeLine
+on: push
+
+jobs:
+  Deploy_Job:
+        runs-on: ubuntu-latest
+        steps:
+           - name: Call The Reuse WorkFlow
+             uses: ./workflows/hellow-reusable.yml@main
