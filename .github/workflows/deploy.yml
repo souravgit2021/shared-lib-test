@@ -1,3 +1,28 @@
+jobs:
+  # Job 1: Run your standard local steps
+  build-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+
+  # Job 2: Call the reusable workflow at the top level
+  call-hello-template:
+    # 
+    uses: souravgit2021/shared-lib-test/.github/workflows/hello-reusable.yml@main
+    
+
+
+
+
+
+
+
+
+
+
+
 name: Main Application PipeLine
 on: push
 
