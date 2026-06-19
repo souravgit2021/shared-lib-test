@@ -1,3 +1,8 @@
+
+name: Main Application PipeLine
+on: push
+
+
 jobs:
   # Job 1: Run your standard local steps
   build-code:
@@ -15,18 +20,3 @@ jobs:
 
 
 
-
-
-
-
-
-
-
-
-name: Main Application PipeLine
-on: push
-
-jobs:
-  Deploy_Job:
-    # Right: 'uses' is placed directly under the job name
-    uses: souravgit2021/shared-lib-test/.github/workflows/hello-reusable.yml@main
